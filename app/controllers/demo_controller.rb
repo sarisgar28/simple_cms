@@ -5,9 +5,15 @@ class DemoController < ApplicationController
   end
 
   def hello 
-    render :hello
+    @array = [1,2,3,4,5,6,7,8]
+    @id = params['id']
+    @page = params[:page]
+    render ('hello')
   end 
   def other_hello
     redirect_to(:action => 'hello')
   end 
+
+  # url params or parameters 
+  
 end

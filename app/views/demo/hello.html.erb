@@ -5,3 +5,16 @@
 <br />
 
 <%= link_to('Index page', {:action => 'index'})%>
+
+<br />
+
+<%= link_to('Index page with parameters ', {:action => 'hello', :page => 5, :id => 20 })%>
+
+<br />
+<% @array.each do |n|%>
+    <%= n %>
+<% end %>
+<br/>
+<%= @id %> <br/>
+<%= params[:id]%> <br/>
+<%= @page %> <br/>
