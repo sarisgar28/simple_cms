@@ -1,17 +1,13 @@
-<h1>Hello Hello </h1>
+ <h1>Hello Hello </h1>
 
 <% target = "world" %>
 <%= "Hello #{target}" %>
-<br />
 
-<%= link_to('Index page', {:action => 'index'})%>
-
-<br />
 
 <%= link_to('Index page with parameters ', {:action => 'hello', :page => 5, :id => 20 })%>
 
 <br />
-<% @array.each do |n|%>
+<% @array.each do |n| %>
     <%= n %>
 <% end %>
 <br/>

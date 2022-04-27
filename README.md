@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## REST 
 
-* Ruby version
+- Representational State Tranfer.
+- Do not perform procedures.
+- Perform state transformation upon resources.
 
-* System dependencies
+# HTTP Verbs
+- VERB -         OBJECTIVE           -USAGE - CACHE
+- GET - Retrieves items from resource - links -YES
+- POST - Creates new item in resource - forms - no
+- PATCH -Updates existing item in resource - forms - yes
+- DELETE - Delete existing item in resource - form - yes
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Action - HTTP verb - Description 
+index  - GET -       Show all items 
+show   - GET -       Show item with :id 
+new    - GET -       Show new form 
+create - POST -      Create an item 
+edit   - GET -       Show edit form for item with :id
+update - PATCH -      Update item with :id 
+delete - GET   -      Show delete form for item with :id 
+destroy - DELETE -     delete item with :id 
