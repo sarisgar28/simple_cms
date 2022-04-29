@@ -1,6 +1,7 @@
 class SubjectsController < ApplicationController
   def index
-    @subjects = Subject.order()
+    @subjects = Subject.sorted
+    #it will render by default
   end
 
   def show
