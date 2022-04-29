@@ -1,6 +1,13 @@
 <h1>Subjects</h1>
 <p>Find me in app/views/subjects/index.html.erb</p>
-
+<div>
+<table class="listing" summary="Subject List">
+<tr class="header">
+<th>#</th>
+<th>Subject</th>
+<th>Visible</th>
+<th>Actions</th>
+</tr>
 <% @subjects.each do |subject|%>
 <tr>
     <td><%=subject.position %>/td>
@@ -11,8 +18,10 @@
     <%= link_to("Show", '#', :class => 'action show')%>
     <%= link_to("Edit", '#' :class => 'action edit')%>
     <%= link_to('Delete', '#' :class => 'action delete')%>
-    <%# <%=%> %>
+    <%# <%=%>%>
     </td>
     <td><%=%>/td>
     <% end %>
 </tr>
+</table>
+</div>
