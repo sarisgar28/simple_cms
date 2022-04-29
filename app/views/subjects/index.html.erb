@@ -1,2 +1,18 @@
-<h1>Subjects#index</h1>
+<h1>Subjects</h1>
 <p>Find me in app/views/subjects/index.html.erb</p>
+
+<% @subjects.each do |subject|%>
+<tr>
+    <td><%=subject.position %>/td>
+    <td><%= subject.name%>/td>
+    <td class="center"><%=subject.visible ? 'Yes' : 'No' %>/td>
+    <td class="center"><%= subject.pages.size%>/td>
+    <td class="actions">
+    <%= link_to("Show", '#', :class => 'action show')%>
+    <%= link_to("Edit", '#' :class => 'action edit')%>
+    <%= link_to('Delete', '#' :class => 'action delete')%>
+    <%# <%=%> %>
+    </td>
+    <td><%=%>/td>
+    <% end %>
+</tr>
