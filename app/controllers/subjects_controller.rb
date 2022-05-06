@@ -1,7 +1,7 @@
 class SubjectsController < ApplicationController
   def index
     @subjects = Subject.sorted
-    #it will render by default
+    #it will render by default and sort the array by position because of the scope helper
   end
 
   def show
